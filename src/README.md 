@@ -1,0 +1,21 @@
+# Flight Filtering System
+
+This project is a simple flight filtering system implemented in Java. The system processes a list of flights and filters them based on various criteria.
+
+## Project Structure
+
+The project contains the following classes:
+
+1. **FlightBuilder.java**: Factory class to generate sample list of flights.
+2. **Flight.java**: Represents a flight consisting of multiple segments.
+3. **Segment.java**: Represents a segment of a flight with departure and arrival times.
+4. **FlightFilter.java**: Contains methods to filter flights based on different criteria.
+5. **Main.java**
+
+## Filtering Criteria
+
+The system filters flights based on the following criteria:
+
+1. **Departure before current time**: Excludes flights that have any segments departing before the current time.
+2. **Arrival before departure**: Excludes flights that have any segments with an arrival time before the departure time.
+3. **More than two hours ground time**: Excludes flights where the total ground time (time between segments) exceeds two hours.
